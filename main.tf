@@ -75,7 +75,7 @@ resource "aws_s3_bucket_acl" "jenkins-artifacts-acl" {
 
 # Defines EC2 instance running Jenkins
 resource "aws_instance" "jenkins" {
-  ami           = "ami-00c39f71452c08778"
+  ami           = "ami-00c39f71452c0"
   instance_type = var.instance_type
   user_data = <<-EOF
     #!/bin/bash
